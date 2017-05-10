@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html>
+<head>
+    <title>About</title>
+</head>
+    <body>
+        <h1> About </h1>
+        <div>
+            <p> This tutorial has been put together by Zach </p>
+        </div>
+        <div>
+            <p> A meida cat:</p>
+            <img src="{{ MEDIA_URL }}cat.jpg" alt="a cat picture from media file">
+            <p> A static dolphin: </p>
+            <img src="{% static "images/dolphin.jpg" %}" alt="a dolphin pic from static files">
+        </div>
+    </body>
+</html>
